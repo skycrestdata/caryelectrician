@@ -60,8 +60,7 @@
    */
 
   --shadow-1: 0 0 20px hsla(216, 14%, 14%, 0.05);
-  --shadow-2: 0 0 0 0.05rem hsla(214, 88%, 27%, 0.08),
-    0 0 1.25rem hsla(216, 14%, 14%, 0.06);
+  --shadow-2: 0 0 0 0.05rem hsla(214, 88%, 27%, 0.08), 0 0 1.25rem hsla(216, 14%, 14%, 0.06);
   --shadow-3: 0 0 1.25rem hsla(216, 14%, 14%, 0.04);
 
   /**
@@ -308,6 +307,7 @@ body.nav-active {
 .header.active {
   background-color: var(--white);
   position: fixed;
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.15);
   animation: slideIn 0.5s ease forwards;
 }
 
@@ -681,11 +681,7 @@ body.nav-active {
 \*-----------------------------------*/
 
 .stats {
-  background-image: linear-gradient(
-    to bottom,
-    var(--white) 50%,
-    var(--cultured) 50%
-  );
+  background-image: linear-gradient(to bottom, var(--white) 50%, var(--cultured) 50%);
 }
 
 .stats-card {
@@ -894,6 +890,10 @@ body.nav-active {
     --section-padding: 120px;
   }
 
+  #formlabel {
+    padding: 0px;
+  }
+
   /**
    * REUSED STYLE
    */
@@ -964,6 +964,163 @@ body.nav-active {
 
   .feature-banner {
     order: 1;
+  }
+}
+
+.form_div {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.container_form {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+.container_form .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container_form .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+}
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+form .user-details .explain-box {
+  width: 100%;
+}
+#explain-box {
+  height: 200px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  resize: none;
+  padding-top: 15px;
+  font-weight: 500;
+  font-family: var(--ff-manrope);
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: var(--violet-blue-crayola);
+}
+form .category {
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+form .category label .dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+  background: var(--violet-blue-crayola);
+  border-color: #d9d9d9;
+}
+form .button {
+  height: 45px;
+}
+form .button input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: var(--transition-2);
+  background-color: var(--violet-blue-crayola);
+  border-color: var(--violet-blue-crayola);
+  color: var(--white);
+}
+/* form .button input:hover {
+  transform: scale(0.99);
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+} */
+
+.button:is(:hover, :focus-visible) {
+  transform: translateY(-4px);
+}
+
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category {
+    width: 100%;
+  }
+  .content form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+@media (max-width: 459px) {
+  .container .content .category {
+    flex-direction: column;
   }
 }
 
