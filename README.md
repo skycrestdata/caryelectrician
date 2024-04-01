@@ -1,6 +1,6 @@
 ### Overview
 
-CaryElectrician website serves as the online presence for providing information about other products/services, contact details, and other relevant information for customers and partners.
+ConcordElectrician website serves as the online presence for providing information about other products/services, contact details, and other relevant information for customers and partners.
 
 ### Technologies Used
 
