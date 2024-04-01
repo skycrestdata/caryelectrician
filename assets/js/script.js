@@ -10,6 +10,12 @@ const addEventOnElements = function (elements, eventType, callback) {
   }
 };
 
+function submitForm(event) {
+  event.preventDefault(); // Prevent the default form submission
+  document.getElementById("gform").style.display = "none";
+  document.getElementById("thank_you_message").style.display = "block";
+}
+
 /**
  * NAVBAR TOGGLE FOR MOBILE
  */
