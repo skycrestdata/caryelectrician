@@ -864,6 +864,12 @@ body.nav-active {
     padding: 8px 20px;
   }
 
+  .header.active .btn {
+    background-color: var(--violet-blue-crayola);
+    border-color: var(--violet-blue-crayola);
+    color: var(--white);
+  }
+
   /**
    * PROJECTS
    */
@@ -904,22 +910,6 @@ body.nav-active {
 
   .grid-list {
     grid-template-columns: 1fr 1fr;
-  }
-
-  /**
-   * HEADER
-   */
-
-  /* .header .btn {
-    display: block;
-    margin-inline-start: auto;
-    padding: 8px 20px;
-  } */
-
-  .header.active .btn {
-    background-color: var(--violet-blue-crayola);
-    border-color: var(--violet-blue-crayola);
-    color: var(--white);
   }
 
   /**
@@ -1111,8 +1101,8 @@ form .button input {
     width: 100%;
   }
   .content form .user-details {
-    max-height: 300px;
-    overflow-y: scroll;
+    max-height: 750px;
+    /* overflow-y: scroll; */
   }
   .user-details::-webkit-scrollbar {
     width: 5px;
