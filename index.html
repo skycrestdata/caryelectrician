@@ -1,74 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- 
+    <!-- 
     - primary meta tags
     -->
-  <title>Concord Electricians</title>
-  <meta name="title" content="Concord Electricians" />
-  <meta name="description" content="Get in touch with an Electrician expert today!" />
-  <meta name="keywords" content="electrician, electrical services, electrician leads, electrical contractors" />
+    <title>Concord Electricians</title>
+    <meta name="title" content="Concord Electricians" />
+    <meta name="description" content="Get in touch with an Electrician expert today!" />
+    <meta name="keywords" content="electrician, electrical services, electrician leads, electrical contractors" />
 
-  <!-- 
+    <!-- 
     - favicon
     <a href="https://www.flaticon.com/free-icons/electrician" title="electrician icons">Electrician icons 
       created by Flat Icons - Flaticon</a> Credit to www.flaticon.com
     -->
-  <link rel="shortcut icon" href="/assets/images/electrical-service.png" type="image/svg+xml" />
+    <link rel="shortcut icon" href="/assets/images/electrical-service.png?" type="image/svg+xml" />
 
-  <!-- 
+    <!-- 
     - google font link
     -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet" />
 
-  <!-- 
+    <!-- 
     - custom css link
     -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- 
+    <!-- 
     - preload images
     -->
-  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
-  <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg" />
-  <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg" />
-  <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg" />
-</head>
+    <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg" />
 
-<body>
-  <!-- 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <script type="text/javascript">
+      $("#gform").on("submit", function (e) {
+        $("#gform *").fadeOut(2000);
+        $("#gform").prepend("Your submission has been processed...");
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- 
     - #HEADER
     -->
 
-  <header class="header" data-header>
-    <div class="container">
-      <a href="#" class="logo">
-        <img src="./assets/images/logo-light.svg" width="275" height="24" alt="Concord Electrician home"
-          class="logo-light" />
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo-light.svg" width="275" height="24" alt="Concord Electrician home" class="logo-light" />
 
-        <img src="./assets/images/logo-dark.svg" width="275" height="24" alt="Concord Electrician home"
-          class="logo-dark" />
-      </a>
+          <img src="./assets/images/logo-dark.svg" width="275" height="24" alt="Concord Electrician home" class="logo-dark" />
+        </a>
 
-      <nav class="navbar" data-navbar>
-        <div class="navbar-top">
-          <a href="#" class="logo">
-            <img src="./assets/images/logo-light.svg" width="175" height="24" alt="Concord Electrician home" />
-          </a>
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <img src="./assets/images/logo-light.svg" width="175" height="24" alt="Concord Electrician home" />
+            </a>
 
-          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
-        </div>
+            <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
 
-        <!-- <ul class="navbar-list">
+          <!-- <ul class="navbar-list">
             <li>
               <a href="#" class="navbar-link">Home</a>
             </li>
@@ -90,7 +98,7 @@
             </li>
           </ul> -->
 
-        <!-- <div class="wrapper">
+          <!-- <div class="wrapper">
             <a href="mailto:info@email.com" class="contact-link"
               >info@email.com</a
             >
@@ -100,7 +108,7 @@
             >
           </div> -->
 
-        <!-- <ul class="social-list">
+          <!-- <ul class="social-list">
             <li>
               <a href="#" class="social-link">
                 <ion-icon name="logo-twitter"></ion-icon>
@@ -131,81 +139,79 @@
               </a>
             </li>
           </ul> -->
-      </nav>
+        </nav>
 
-      <a href="tel:9192442673" class="btn btn-primary">Call Now</a>
+        <a href="tel:9192442673" class="btn btn-primary">Call Now</a>
 
-      <!-- <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <!-- <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
         </button> -->
 
-      <div class="overlay" data-nav-toggler data-overlay></div>
-    </div>
-  </header>
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
 
-  <main>
-    <article>
-      <!-- 
+    <main>
+      <article>
+        <!-- 
         - #HERO
         -->
 
-      <section class="section hero has-bg-image" aria-label="home"
-        style="background-image: url('./assets/images/hero-bg.jpg')">
-        <div class="container">
-          <div class="hero-content">
-            <h1 class="h1 hero-title">Get in touch with an Electrician expert today!</h1>
+        <section class="section hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/hero-bg.jpg')">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">Get in touch with an Electrician expert today!</h1>
 
-            <p class="hero-text">Call below or Inquire with our form!</p>
+              <p class="hero-text">Call below or Inquire with our form!</p>
 
-            <div class="btn-wrapper">
-              <a href="tel:9192442673" class="btn btn-outline">(919) 244-2673</a>
-              <a href="#formlabel" class="btn btn-primary">Contact Us</a>
+              <div class="btn-wrapper">
+                <a href="tel:9192442673" class="btn btn-outline">(919) 244-2673</a>
+                <a href="#formlabel" class="btn btn-primary">Contact Us</a>
+              </div>
             </div>
-          </div>
 
-          <div class="hero-slider" data-slider>
-            <div class="slider-inner">
-              <ul class="slider-container" data-slider-container>
-                <li class="slider-item">
-                  <figure class="img-holder" style="--width: 575; --height: 550">
-                    <img src="./assets/images/hero-slide-1.jpg" width="575" height="550" alt="" class="img-cover" />
-                  </figure>
-                </li>
-
-                <li class="slider-item">
-                  <div class="hero-card">
+            <div class="hero-slider" data-slider>
+              <div class="slider-inner">
+                <ul class="slider-container" data-slider-container>
+                  <li class="slider-item">
                     <figure class="img-holder" style="--width: 575; --height: 550">
-                      <img src="./assets/images/hero-slide-2.jpg" width="575" height="550" alt="hero banner"
-                        class="img-cover" />
+                      <img src="./assets/images/hero-slide-1.jpg" width="575" height="550" alt="" class="img-cover" />
                     </figure>
-                  </div>
-                </li>
+                  </li>
 
-                <li class="slider-item">
-                  <figure class="img-holder" style="--width: 575; --height: 550">
-                    <img src="./assets/images/hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover" />
-                  </figure>
-                </li>
-              </ul>
+                  <li class="slider-item">
+                    <div class="hero-card">
+                      <figure class="img-holder" style="--width: 575; --height: 550">
+                        <img src="./assets/images/hero-slide-2.jpg" width="575" height="550" alt="hero banner" class="img-cover" />
+                      </figure>
+                    </div>
+                  </li>
+
+                  <li class="slider-item">
+                    <figure class="img-holder" style="--width: 575; --height: 550">
+                      <img src="./assets/images/hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover" />
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+
+              <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+                <ion-icon name="arrow-back"></ion-icon>
+              </button>
+
+              <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </button>
             </div>
-
-            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
-              <ion-icon name="arrow-back"></ion-icon>
-            </button>
-
-            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
-              <ion-icon name="arrow-forward"></ion-icon>
-            </button>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- 
+        <!-- 
         - #SERVICE
         -->
 
-      <section class="section service" aria-labelledby="service-label" id="formlabel">
-        <!-- <div class="container">
+        <section class="section service" aria-labelledby="service-label" id="formlabel">
+          <!-- <div class="container">
             <p class="section-subtitle" id="service-label">What We Do?</p>
 
             <h2 class="h2 section-title">
@@ -319,48 +325,48 @@
               </li>
             </ul>
           </div> -->
-        <div class="form_div">
-          <div class="container_form">
-            <div class="title">Contact Us!</div>
-            <div class="content">
-              <form action="#">
-                <div class="user-details">
-                  <div class="input-box">
-                    <span class="details">First Name</span>
-                    <input type="text" placeholder="Enter your first name" required />
+          <div class="form_div">
+            <div class="container_form">
+              <div class="title">Contact Us!</div>
+              <div class="content">
+                <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSexKuOyuTMbHITTKIoWoZgKPgDdSNwc3TCMcTyQ357JCDHpAQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                  <div class="user-details">
+                    <div class="input-box">
+                      <span class="details">First Name</span>
+                      <input type="text" name="entry.712111517" id="entry.712111517" placeholder="Enter your first name" required />
+                    </div>
+                    <div class="input-box">
+                      <span class="details">Last Name</span>
+                      <input type="text" name="entry.140881375" id="entry.140881375" placeholder="Enter your last name" required />
+                    </div>
+                    <div class="input-box">
+                      <span class="details">Phone Number</span>
+                      <input type="text" name="entry.2136353087" id="entry.2136353087" placeholder="Enter your number" required />
+                    </div>
+                    <div class="input-box">
+                      <span class="details">Email</span>
+                      <input type="text" name="entry.1950043751" id="entry.1950043751" placeholder="Enter your email" required />
+                    </div>
+                    <div class="input-box explain-box">
+                      <span class="details">Explain Service Needed</span>
+                      <textarea name="entry.724460374" id="explain-box" placeholder="Enter service needed or any additional information" required></textarea>
+                    </div>
                   </div>
-                  <div class="input-box">
-                    <span class="details">Last Name</span>
-                    <input type="text" placeholder="Enter your last name" required />
+                  <div class="button">
+                    <input type="submit" value="Submit" />
                   </div>
-                  <div class="input-box">
-                    <span class="details">Phone Number</span>
-                    <input type="text" placeholder="Enter your number" required />
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Email</span>
-                    <input type="text" placeholder="Enter your email" required />
-                  </div>
-                  <div class="input-box explain-box">
-                    <span class="details">Explain Service Needed</span>
-                    <textarea id="explain-box" placeholder="Enter service needed or any additional information"
-                      required></textarea>
-                  </div>
-                </div>
-                <div class="button">
-                  <input type="submit" value="Submit" />
-                </div>
-              </form>
+                </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted) {}"></iframe>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- 
+        <!-- 
         - #ABOUT
         -->
 
-      <!-- <section class="about" aria-labelledby="about-label">
+        <!-- <section class="about" aria-labelledby="about-label">
           <div class="container">
             <figure class="about-banner">
               <img
@@ -454,11 +460,11 @@
           </div>
         </section> -->
 
-      <!-- 
+        <!-- 
         - #FEATURE
         -->
 
-      <!-- <section class="section feature" aria-labelledby="feature-label">
+        <!-- <section class="section feature" aria-labelledby="feature-label">
           <div class="container">
             <figure class="feature-banner">
               <img
@@ -538,11 +544,11 @@
           </div>
         </section> -->
 
-      <!-- 
+        <!-- 
         - #STATS
         -->
 
-      <!-- <section class="stats" aria-label="our stats">
+        <!-- <section class="stats" aria-label="our stats">
           <div class="container">
             <ul
               class="stats-card has-bg-image"
@@ -583,11 +589,11 @@
           </div>
         </section> -->
 
-      <!-- 
+        <!-- 
         - #PROJECT
         -->
 
-      <!-- <section class="section project" aria-labelledby="project-label">
+        <!-- <section class="section project" aria-labelledby="project-label">
           <div class="container">
             <p class="section-subtitle" id="project-label">Case Studies</p>
 
@@ -762,11 +768,11 @@
           </div>
         </section> -->
 
-      <!-- 
+        <!-- 
         - #CTA
         -->
 
-      <!-- <section class="cta" aria-label="call to action">
+        <!-- <section class="cta" aria-label="call to action">
           <div class="container">
             <h2 class="h2 section-title">
               Join our community by using our services and grow your business.
@@ -775,17 +781,17 @@
             <a href="#" class="btn btn-primary">Try it For Free</a>
           </div>
         </section> -->
-    </article>
-  </main>
+      </article>
+    </main>
 
-  <!-- 
+    <!-- 
     - #FOOTER
     -->
 
-  <footer class="footer">
-    <div class="container grid-list">
-      <div class="footer-brand">
-        <!-- <a href="#" class="logo">
+    <footer class="footer">
+      <div class="container grid-list">
+        <div class="footer-brand">
+          <!-- <a href="#" class="logo">
             <img
               src="./assets/images/logo-light.svg"
               width="275"
@@ -794,12 +800,12 @@
             />
           </a> -->
 
-        <p class="footer-text">
-          &copy; 2024 SkyCrest Data. <br />
-          All rights reserved.
-        </p>
+          <p class="footer-text">
+            &copy; 2024 SkyCrest Data. <br />
+            All rights reserved.
+          </p>
 
-        <!-- <ul class="social-list">
+          <!-- <ul class="social-list">
             <li>
               <a href="#" class="social-link">
                 <ion-icon name="logo-facebook"></ion-icon>
@@ -901,20 +907,19 @@
 
             <button type="submit" class="submit-btn">Join</button>
           </form> -->
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- 
+    <!-- 
     - custom js link
     -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!-- 
+    <!-- 
     - ionicon
     -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>
