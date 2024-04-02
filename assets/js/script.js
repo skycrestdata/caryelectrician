@@ -10,10 +10,10 @@ const addEventOnElements = function (elements, eventType, callback) {
   }
 };
 
-function submitForm(event) {
-  event.preventDefault(); // Prevent the default form submission
+function submitForm() {
   document.getElementById("gform").style.display = "none";
   document.getElementById("thankyou-message").style.display = "block";
+  submitted = true;
 }
 
 /**
